@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Earth | Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text transition-colors duration-300">
+    <header class="fixed w-full top-0 z-50 bg-white/80 dark:bg-[#111111]/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 group whitespace-nowrap">
+                    <i data-lucide="gem" class="w-8 h-8 text-primary dark:text-secondary group-hover:rotate-12 transition-transform"></i>
+                    <span class="font-heading text-2xl font-bold tracking-wider text-primary dark:text-white">ANCIENT EARTH</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden xl:flex items-center gap-4 xl:gap-6 font-medium text-sm tracking-wide whitespace-nowrap">
+                    <a href="index.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Home</a>
+                    <a href="home2.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Home 2</a>
+                    <a href="about.html" class="hover:text-primary dark:hover:text-secondary transition-colors">About</a>
+                    <a href="services.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Services</a>
+                    <a href="collections.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Fossils</a>
+                    <a href="auctions.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Auctions</a>
+                    <a href="pricing.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Pricing</a>
+                    <a href="blog.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Blog</a>
+                    <a href="contact.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden xl:flex items-center gap-4 whitespace-nowrap">
+                    <button class="theme-toggle p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle Theme">
+                        <i data-lucide="moon" class="w-5 h-5 hidden dark:block text-secondary"></i>
+                        <i data-lucide="sun" class="w-5 h-5 block dark:hidden text-primary"></i>
+                    </button>
+                    <button class="rtl-toggle p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-heading font-bold" aria-label="Toggle RTL">
+                        EN/AR
+                    </button>
+                    <a href="signup.html" class="px-5 py-2.5 bg-primary text-white hover:bg-primary-light dark:bg-secondary dark:text-dark-bg dark:hover:bg-secondary-light rounded-sm font-semibold transition-colors flex items-center gap-2 whitespace-nowrap">
+                        <span>Sign Up</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="xl:hidden p-2 text-gray-600 dark:text-gray-300">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-[#1A1A1A] border-t border-gray-200 dark:border-gray-800 absolute w-full left-0 shadow-xl">
+            <div class="flex flex-col py-4 px-6 gap-4">
+                <a href="index.html" class="hover:text-primary dark:hover:text-secondary">Home</a>
+                <a href="home2.html" class="hover:text-primary dark:hover:text-secondary">Home 2</a>
+                <a href="about.html" class="hover:text-primary dark:hover:text-secondary">About</a>
+                <a href="services.html" class="hover:text-primary dark:hover:text-secondary">Services</a>
+                <a href="collections.html" class="hover:text-primary dark:hover:text-secondary">Fossils</a>
+                <a href="auctions.html" class="hover:text-primary dark:hover:text-secondary">Auctions</a>
+                <a href="pricing.html" class="hover:text-primary dark:hover:text-secondary">Pricing</a>
+                <a href="blog.html" class="hover:text-primary dark:hover:text-secondary">Blog</a>
+                <a href="contact.html" class="hover:text-primary dark:hover:text-secondary">Contact</a>
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <button class="theme-toggle flex items-center gap-2">
+                        <i data-lucide="moon" class="w-5 h-5"></i> Theme
+                    </button>
+                    <button class="rtl-toggle font-heading font-bold">EN/AR</button>
+                </div>
+                <a href="signup.html" class="mt-2 text-center py-3 bg-primary text-white dark:bg-secondary dark:text-dark-bg rounded-sm font-semibold">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex flex-col lg:flex-row min-h-screen bg-[#111111]">
+        
+        <!-- 1. Visual/Benefits Side -->
+        <section class="lg:w-1/2 relative hidden lg:flex items-center justify-center p-12 overflow-hidden border-r border-gray-800">
+            <div class="absolute inset-0 opacity-30">
+                <img src="assets/images/museum-hall.png" class="w-full h-full object-cover grayscale">
+            </div>
+            <div class="relative z-10 max-w-md reveal">
+                <i data-lucide="crown" class="w-12 h-12 text-secondary mb-6"></i>
+                <h2 class="font-heading text-4xl font-bold text-white mb-6">Enter The Collector's Vault</h2>
+                <p class="text-gray-400 mb-8">Registration is required to view unreserved pricing, participate in live geological auctions, and receive private sourcing catalogs.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check-circle-2" class="text-secondary w-5 h-5"></i> Access to bidding rooms</li>
+                    <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check-circle-2" class="text-secondary w-5 h-5"></i> View high-res X-ray reports</li>
+                    <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check-circle-2" class="text-secondary w-5 h-5"></i> Direct curator communication</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 2. Form Side -->
+        <section class="lg:w-1/2 flex items-center justify-center p-8 relative pt-32 lg:pt-8 reveal">
+            <div class="w-full max-w-md">
+                <h2 class="font-heading text-3xl font-bold dark:text-white mb-2">Create Account</h2>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-8">Enter your details to begin the verification process.</p>
+
+                <form class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1">Full Name</label>
+                        <input type="text" class="w-full bg-white dark:bg-[#1A1A1A] border border-gray-300 dark:border-gray-800 text-gray-900 dark:text-white px-4 py-3 rounded-sm focus:outline-none focus:border-secondary transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1">Email Address</label>
+                        <input type="email" class="w-full bg-white dark:bg-[#1A1A1A] border border-gray-300 dark:border-gray-800 text-gray-900 dark:text-white px-4 py-3 rounded-sm focus:outline-none focus:border-secondary transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1">Password</label>
+                        <input type="password" class="w-full bg-white dark:bg-[#1A1A1A] border border-gray-300 dark:border-gray-800 text-gray-900 dark:text-white px-4 py-3 rounded-sm focus:outline-none focus:border-secondary transition-colors">
+                    </div>
+                    <!-- 3. Extra Consent -->
+                    <div class="flex items-start gap-3 mt-4">
+                        <input type="checkbox" class="mt-1 accent-secondary">
+                        <p class="text-xs text-gray-500">I agree to the Terms of Service and acknowledge that bidding requires identity verification.</p>
+                    </div>
+
+                    <button type="submit" class="w-full bg-secondary text-dark-bg font-bold py-3 rounded-sm hover:bg-white transition-colors mt-6">Register</button>
+                </form>
+                
+                <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-8">
+                    Already verified? <a href="#" class="text-primary dark:text-secondary hover:underline font-bold">Sign In</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
+

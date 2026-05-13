@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Earth | Pricing & Memberships</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text transition-colors duration-300">
+    <header class="fixed w-full top-0 z-50 bg-white/80 dark:bg-[#111111]/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 group whitespace-nowrap">
+                    <i data-lucide="gem" class="w-8 h-8 text-primary dark:text-secondary group-hover:rotate-12 transition-transform"></i>
+                    <span class="font-heading text-2xl font-bold tracking-wider text-primary dark:text-white">ANCIENT EARTH</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden xl:flex items-center gap-4 xl:gap-6 font-medium text-sm tracking-wide whitespace-nowrap">
+                    <a href="index.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Home</a>
+                    <a href="home2.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Home 2</a>
+                    <a href="about.html" class="hover:text-primary dark:hover:text-secondary transition-colors">About</a>
+                    <a href="services.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Services</a>
+                    <a href="collections.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Fossils</a>
+                    <a href="auctions.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Auctions</a>
+                    <a href="pricing.html" class="text-primary dark:text-secondary border-b-2 border-primary dark:border-secondary pb-1">Pricing</a>
+                    <a href="blog.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Blog</a>
+                    <a href="contact.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden xl:flex items-center gap-4 whitespace-nowrap">
+                    <button class="theme-toggle p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle Theme">
+                        <i data-lucide="moon" class="w-5 h-5 hidden dark:block text-secondary"></i>
+                        <i data-lucide="sun" class="w-5 h-5 block dark:hidden text-primary"></i>
+                    </button>
+                    <button class="rtl-toggle p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-heading font-bold" aria-label="Toggle RTL">
+                        EN/AR
+                    </button>
+                    <a href="signup.html" class="px-5 py-2.5 bg-primary text-white hover:bg-primary-light dark:bg-secondary dark:text-dark-bg dark:hover:bg-secondary-light rounded-sm font-semibold transition-colors flex items-center gap-2 whitespace-nowrap">
+                        <span>Sign Up</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="xl:hidden p-2 text-gray-600 dark:text-gray-300">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-[#1A1A1A] border-t border-gray-200 dark:border-gray-800 absolute w-full left-0 shadow-xl">
+            <div class="flex flex-col py-4 px-6 gap-4">
+                <a href="index.html" class="hover:text-primary dark:hover:text-secondary">Home</a>
+                <a href="home2.html" class="hover:text-primary dark:hover:text-secondary">Home 2</a>
+                <a href="about.html" class="hover:text-primary dark:hover:text-secondary">About</a>
+                <a href="services.html" class="hover:text-primary dark:hover:text-secondary">Services</a>
+                <a href="collections.html" class="hover:text-primary dark:hover:text-secondary">Fossils</a>
+                <a href="auctions.html" class="hover:text-primary dark:hover:text-secondary">Auctions</a>
+                <a href="pricing.html" class="text-primary dark:text-secondary font-medium">Pricing</a>
+                <a href="blog.html" class="hover:text-primary dark:hover:text-secondary">Blog</a>
+                <a href="contact.html" class="hover:text-primary dark:hover:text-secondary">Contact</a>
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <button class="theme-toggle flex items-center gap-2">
+                        <i data-lucide="moon" class="w-5 h-5"></i> Theme
+                    </button>
+                    <button class="rtl-toggle font-heading font-bold">EN/AR</button>
+                </div>
+                <a href="signup.html" class="mt-2 text-center py-3 bg-primary text-white dark:bg-secondary dark:text-dark-bg rounded-sm font-semibold">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero -->
+        <section class="pt-40 pb-20 bg-[#111111] border-b border-gray-800">
+            <div class="container mx-auto px-4 text-center reveal">
+                <h1 class="font-heading text-5xl font-bold text-white mb-6">Collector's Memberships</h1>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Gain priority access to recent excavations, private viewing rooms, and waived auction premiums.</p>
+            </div>
+        </section>
+
+        <!-- 2. Pricing Cards -->
+        <section class="py-20 bg-[#151515] reveal">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Standard -->
+                    <div class="bg-[#1A1A1A] border border-gray-800 rounded-sm p-8 flex flex-col hover:border-gray-600 transition-colors">
+                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Associate</h3>
+                        <p class="text-gray-400 mb-6">For the budding enthusiast.</p>
+                        <p class="text-4xl font-bold text-white mb-8">$500 <span class="text-sm text-gray-500 font-normal">/ year</span></p>
+                        <ul class="space-y-4 mb-8 flex-grow">
+                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Digital catalogs</li>
+                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Public auction bidding</li>
+                        </ul>
+                        <button class="w-full py-3 border border-secondary text-secondary font-bold rounded-sm hover:bg-secondary hover:text-dark-bg transition-colors">Join Now</button>
+                    </div>
+
+                    <!-- Premium -->
+                    <div class="bg-[#1A1A1A] border-2 border-secondary rounded-sm p-8 flex flex-col relative shadow-[0_0_30px_rgba(212,162,76,0.15)] transform md:-translate-y-4">
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary text-dark-bg px-4 py-1 font-bold text-sm uppercase tracking-wider rounded-sm">Curator's Choice</div>
+                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Fellow</h3>
+                        <p class="text-gray-400 mb-6">For the serious private collector.</p>
+                        <p class="text-4xl font-bold text-white mb-8">$2,500 <span class="text-sm text-gray-500 font-normal">/ year</span></p>
+                        <ul class="space-y-4 mb-8 flex-grow">
+                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Private viewing room</li>
+                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> 5% reduction in premiums</li>
+                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Early access</li>
+                        </ul>
+                        <button class="w-full py-3 bg-secondary text-dark-bg font-bold rounded-sm hover:bg-white transition-colors">Join Now</button>
+                    </div>
+
+                    <!-- Elite -->
+                    <div class="bg-[#1A1A1A] border border-gray-800 rounded-sm p-8 flex flex-col hover:border-gray-600 transition-colors">
+                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Patron</h3>
+                        <p class="text-gray-400 mb-6">For institutions and elite buyers.</p>
+                        <p class="text-4xl font-bold text-white mb-8">$10,000 <span class="text-sm text-gray-500 font-normal">/ year</span></p>
+                        <ul class="space-y-4 mb-8 flex-grow">
+                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Dedicated agent</li>
+                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Zero auction premiums</li>
+                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Sourcing requests</li>
+                        </ul>
+                        <button class="w-full py-3 border border-secondary text-secondary font-bold rounded-sm hover:bg-secondary hover:text-dark-bg transition-colors">Join Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Feature Comparison -->
+        <section class="py-24 bg-white dark:bg-[#111111] border-t border-gray-200 dark:border-gray-800 reveal">
+            <div class="container mx-auto px-4 max-w-5xl">
+                <h2 class="font-heading text-3xl font-bold text-center dark:text-white mb-12">Membership Benefits</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-gray-300 dark:border-gray-700">
+                                <th class="p-4 font-bold dark:text-white">Feature</th>
+                                <th class="p-4 font-bold text-center dark:text-white">Associate</th>
+                                <th class="p-4 font-bold text-center text-secondary">Fellow</th>
+                                <th class="p-4 font-bold text-center dark:text-white">Patron</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-600 dark:text-gray-400">
+                            <tr class="border-b border-gray-200 dark:border-gray-800">
+                                <td class="p-4">Auction Bidding</td>
+                                <td class="p-4 text-center"><i data-lucide="check" class="mx-auto text-secondary"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="check" class="mx-auto text-secondary"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="check" class="mx-auto text-secondary"></i></td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-800">
+                                <td class="p-4">Early Access to Catalogs</td>
+                                <td class="p-4 text-center">-</td>
+                                <td class="p-4 text-center"><i data-lucide="check" class="mx-auto text-secondary"></i></td>
+                                <td class="p-4 text-center"><i data-lucide="check" class="mx-auto text-secondary"></i></td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-800">
+                                <td class="p-4">Reduced Premiums</td>
+                                <td class="p-4 text-center">Standard</td>
+                                <td class="p-4 text-center">5% Off</td>
+                                <td class="p-4 text-center">0%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#0A0A0A] text-white pt-20 pb-10 border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <i data-lucide="gem" class="w-8 h-8 text-secondary"></i>
+                        <span class="font-heading text-2xl font-bold tracking-wider text-white">ANCIENT EARTH</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        The world's premier dealer of museum-grade fossils, rare minerals, and geological artifacts. Certified authenticity, uncompromising quality.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-dark-bg transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-dark-bg transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-dark-bg transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Collections</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="collections.html" class="hover:text-secondary transition-colors">Dinosaur Fossils</a></li>
+                        <li><a href="collections.html" class="hover:text-secondary transition-colors">Marine Specimens</a></li>
+                        <li><a href="minerals.html" class="hover:text-secondary transition-colors">Rare Gemstones</a></li>
+                        <li><a href="minerals.html" class="hover:text-secondary transition-colors">Meteorites</a></li>
+                        <li><a href="authenticity.html" class="hover:text-secondary transition-colors">Display Stands</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Information</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">Our Story</a></li>
+                        <li><a href="authenticity.html" class="hover:text-secondary transition-colors">Authenticity Guarantee</a></li>
+                        <li><a href="auctions.html" class="hover:text-secondary transition-colors">How to Bid</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary transition-colors">Excavation Journal</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe to receive early access to new acquisitions and auction catalogs.</p>
+                    <form class="flex flex-col gap-3">
+                        <input type="email" placeholder="Email Address" class="bg-gray-900 border border-gray-800 text-white px-4 py-3 rounded-sm focus:outline-none focus:border-secondary transition-colors">
+                        <button type="submit" class="bg-secondary text-dark-bg font-bold py-3 rounded-sm hover:bg-secondary-light transition-colors">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+                <p>&copy; 2026 Ancient Earth Geological Specimens. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

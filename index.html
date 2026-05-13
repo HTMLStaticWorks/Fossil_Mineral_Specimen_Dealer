@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Earth | Fossil & Mineral Specimen Dealer</title>
+    <meta name="description" content="Discover museum-grade fossil collections, rare mineral showcases, and authenticity-certified geological artifacts.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script src="assets/js/tailwind-config.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text transition-colors duration-300">
+
+    <!-- Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/80 dark:bg-[#111111]/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 group whitespace-nowrap">
+                    <i data-lucide="gem" class="w-8 h-8 text-primary dark:text-secondary group-hover:rotate-12 transition-transform"></i>
+                    <span class="font-heading text-2xl font-bold tracking-wider text-primary dark:text-white">ANCIENT EARTH</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden xl:flex items-center gap-4 xl:gap-6 font-medium text-sm tracking-wide whitespace-nowrap">
+                    <a href="index.html" class="text-primary dark:text-secondary border-b-2 border-primary dark:border-secondary pb-1">Home</a>
+                    <a href="home2.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Home 2</a>
+                    <a href="about.html" class="hover:text-primary dark:hover:text-secondary transition-colors">About</a>
+                    <a href="services.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Services</a>
+                    <a href="collections.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Fossils</a>
+                    <a href="auctions.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Auctions</a>
+                    <a href="pricing.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Pricing</a>
+                    <a href="blog.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Blog</a>
+                    <a href="contact.html" class="hover:text-primary dark:hover:text-secondary transition-colors">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden xl:flex items-center gap-4 whitespace-nowrap">
+                    <button class="theme-toggle p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle Theme">
+                        <i data-lucide="moon" class="w-5 h-5 hidden dark:block text-secondary"></i>
+                        <i data-lucide="sun" class="w-5 h-5 block dark:hidden text-primary"></i>
+                    </button>
+                    <button class="rtl-toggle p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-heading font-bold" aria-label="Toggle RTL">
+                        EN/AR
+                    </button>
+                    <a href="signup.html" class="px-5 py-2.5 bg-primary text-white hover:bg-primary-light dark:bg-secondary dark:text-dark-bg dark:hover:bg-secondary-light rounded-sm font-semibold transition-colors flex items-center gap-2 whitespace-nowrap">
+                        <span>Sign Up</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="xl:hidden p-2 text-gray-600 dark:text-gray-300">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-[#1A1A1A] border-t border-gray-200 dark:border-gray-800 absolute w-full left-0 shadow-xl">
+            <div class="flex flex-col py-4 px-6 gap-4">
+                <a href="index.html" class="text-primary dark:text-secondary font-medium">Home</a>
+                <a href="home2.html" class="hover:text-primary dark:hover:text-secondary">Home 2</a>
+                <a href="about.html" class="hover:text-primary dark:hover:text-secondary">About</a>
+                <a href="services.html" class="hover:text-primary dark:hover:text-secondary">Services</a>
+                <a href="collections.html" class="hover:text-primary dark:hover:text-secondary">Fossils</a>
+                <a href="auctions.html" class="hover:text-primary dark:hover:text-secondary">Auctions</a>
+                <a href="pricing.html" class="hover:text-primary dark:hover:text-secondary">Pricing</a>
+                <a href="blog.html" class="hover:text-primary dark:hover:text-secondary">Blog</a>
+                <a href="contact.html" class="hover:text-primary dark:hover:text-secondary">Contact</a>
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+                    <button class="theme-toggle flex items-center gap-2">
+                        <i data-lucide="moon" class="w-5 h-5"></i> Theme
+                    </button>
+                    <button class="rtl-toggle font-heading font-bold">EN/AR</button>
+                </div>
+                <a href="signup.html" class="mt-2 text-center py-3 bg-primary text-white dark:bg-secondary dark:text-dark-bg rounded-sm font-semibold">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden bg-[#111111]">
+            <div class="absolute inset-0 z-0">
+                <img src="assets/images/museum_hero_bg_1778608628531.png" alt="Museum Hall" class="w-full h-full object-cover opacity-60 animate-slow-spin" style="animation-duration: 40s;">
+                <div class="absolute inset-0 hero-overlay"></div>
+            </div>
+            
+            <div class="container mx-auto px-4 lg:px-8 relative z-10 flex flex-col items-center text-center mt-16">
+                <div class="reveal">
+                    <span class="inline-block py-1 px-3 border border-secondary text-secondary font-heading tracking-widest text-sm mb-6 uppercase">Museum-Grade Collection</span>
+                    <h1 class="font-heading text-5xl md:text-7xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto">
+                        Own a Piece of <span class="text-gradient-gold">Earth's Ancient History</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                        Curated geological specimens for elite collectors. Discover rare dinosaur fossils, glowing mineral crystals, and authenticity-certified artifacts spanning millions of years.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="collections.html" class="w-full sm:w-auto px-8 py-4 bg-secondary text-dark-bg hover:bg-secondary-light transition-colors rounded-sm font-semibold text-lg flex items-center justify-center gap-2 group">
+                            <span>Explore Collections</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="auctions.html" class="w-full sm:w-auto px-8 py-4 border border-white/30 text-white hover:bg-white/10 transition-colors rounded-sm font-semibold text-lg backdrop-blur-sm flex items-center justify-center gap-2">
+                            <i data-lucide="gavel" class="w-5 h-5"></i>
+                            <span>Join Live Auction</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+                <i data-lucide="mouse" class="w-6 h-6 text-white/50"></i>
+            </div>
+        </section>
+
+        <!-- Featured Fossil Collections -->
+        <section class="py-24 bg-white dark:bg-dark-bg transition-colors duration-300">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-primary dark:text-white mb-4">Mesozoic Era Fossils</h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Meticulously excavated and beautifully preserved specimens from the age of dinosaurs. Each piece tells a millions-of-years-old story.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="group card-bg rounded-sm border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal gallery-zoom">
+                        <div class="relative h-80 overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <img src="assets/images/fossil_ammonite_1778608643447.png" alt="Ammonite Fossil" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-secondary px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-sm border border-secondary/30">
+                                Certified
+                            </div>
+                        </div>
+                        <div class="p-6 relative z-10 bg-white dark:bg-[#1A1A1A]">
+                            <div class="text-sm text-primary dark:text-secondary mb-2 font-medium">Jurassic Period â€¢ 150 Million Yrs</div>
+                            <h3 class="font-heading text-2xl font-bold mb-3 dark:text-white group-hover:text-primary dark:group-hover:text-secondary transition-colors">Cleoniceras Ammonite</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">A perfectly preserved iridescent ammonite from Madagascar, featuring stunning opalescent suture patterns.</p>
+                            <a href="#" class="inline-flex items-center font-bold text-primary dark:text-secondary hover:underline group-hover:gap-2 transition-all">
+                                View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="group card-bg rounded-sm border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal gallery-zoom" style="transition-delay: 100ms;">
+                        <div class="relative h-80 overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <img src="assets/images/hero-fossil.png" alt="Spinosaurus Tooth" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 relative z-10 bg-white dark:bg-[#1A1A1A]">
+                            <div class="text-sm text-primary dark:text-secondary mb-2 font-medium">Cretaceous Period â€¢ 95 Million Yrs</div>
+                            <h3 class="font-heading text-2xl font-bold mb-3 dark:text-white group-hover:text-primary dark:group-hover:text-secondary transition-colors">Spinosaurus Tooth</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">A large, fully rooted theropod tooth showing exquisite enamel preservation from the Kem Kem beds.</p>
+                            <a href="#" class="inline-flex items-center font-bold text-primary dark:text-secondary hover:underline group-hover:gap-2 transition-all">
+                                View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="group card-bg rounded-sm border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal gallery-zoom" style="transition-delay: 200ms;">
+                        <div class="relative h-80 overflow-hidden bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-gray-200/50 dark:bg-gray-800/50 animate-pulse"></div>
+                            <i data-lucide="bone" class="w-16 h-16 text-gray-400 absolute"></i>
+                            <img src="assets/images/fossil_ammonite_1778608643447.png" alt="Trilobite" class="w-full h-full object-cover opacity-80 mix-blend-multiply dark:mix-blend-lighten">
+                        </div>
+                        <div class="p-6 relative z-10 bg-white dark:bg-[#1A1A1A]">
+                            <div class="text-sm text-primary dark:text-secondary mb-2 font-medium">Devonian Period â€¢ 380 Million Yrs</div>
+                            <h3 class="font-heading text-2xl font-bold mb-3 dark:text-white group-hover:text-primary dark:group-hover:text-secondary transition-colors">Drotops Megalomanicus</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">A massive, museum-mounted trilobite exhibiting extraordinary eye facet preservation.</p>
+                            <a href="#" class="inline-flex items-center font-bold text-primary dark:text-secondary hover:underline group-hover:gap-2 transition-all">
+                                View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center reveal">
+                    <a href="collections.html" class="inline-block border-2 border-primary dark:border-secondary text-primary dark:text-secondary px-8 py-3 rounded-sm font-bold hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-dark-bg transition-colors">View All Collections</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rare Mineral Showcase -->
+        <section class="py-24 bg-gray-50 dark:bg-[#151515] transition-colors duration-300 relative border-y border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="w-full lg:w-1/2 reveal text-center lg:text-left flex flex-col items-center lg:items-start">
+                        <span class="inline-block text-secondary font-heading font-bold tracking-widest mb-4">GEOLOGICAL MASTERPIECES</span>
+                        <h2 class="font-heading text-4xl md:text-5xl font-bold text-primary dark:text-white mb-6 leading-tight">Luminous Crystals & Rare Gemstones</h2>
+                        <p class="text-gray-600 dark:text-gray-400 mb-8 text-lg leading-relaxed">
+                            Our mineral collection represents the most vibrant, architecturally perfect natural formations on Earth. Sourced directly from iconic mines worldwide, each specimen is selected for supreme clarity, structural integrity, and aesthetic brilliance.
+                        </p>
+                        <ul class="space-y-4 mb-10 text-left">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-secondary flex-shrink-0 mt-0.5"></i>
+                                <span class="text-gray-700 dark:text-gray-300">Untreated, 100% natural crystalline structures</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-secondary flex-shrink-0 mt-0.5"></i>
+                                <span class="text-gray-700 dark:text-gray-300">Custom museum-grade brass and acrylic display stands</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-secondary flex-shrink-0 mt-0.5"></i>
+                                <span class="text-gray-700 dark:text-gray-300">Detailed geological provenance and origin documentation</span>
+                            </li>
+                        </ul>
+                        <a href="minerals.html" class="px-8 py-4 bg-primary text-white hover:bg-primary-light dark:bg-white dark:text-dark-bg dark:hover:bg-gray-200 rounded-sm font-semibold transition-colors inline-flex items-center gap-2">
+                            Browse Mineral Gallery
+                        </a>
+                    </div>
+                    
+                    <div class="w-full lg:w-1/2 reveal relative">
+                        <div class="relative rounded-sm overflow-hidden shadow-2xl">
+                            <img src="assets/images/rare_crystal_1778608657317.png" alt="Rare Mineral Specimen" class="w-full h-auto rounded-sm">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                                <div>
+                                    <h3 class="text-white font-heading text-2xl font-bold mb-1">Elbaite Tourmaline on Quartz</h3>
+                                    <p class="text-secondary font-medium">Cruzeiro Mine, Minas Gerais, Brazil</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Accent Card -->
+                        <div class="absolute -bottom-8 -left-8 bg-white dark:bg-[#1A1A1A] p-6 rounded-sm shadow-xl border border-gray-100 dark:border-gray-800 hidden md:block animate-float">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
+                                    <i data-lucide="microscope" class="w-6 h-6 text-primary dark:text-secondary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-primary dark:text-white text-lg">Museum Verified</p>
+                                    <p class="text-sm text-gray-500">Gemological Institute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Auctions -->
+        <section class="py-24 bg-white dark:bg-dark-bg transition-colors duration-300">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center md:items-end justify-between mb-16 reveal text-center md:text-left">
+                    <div class="max-w-2xl flex flex-col items-center md:items-start">
+                        <span class="inline-flex items-center gap-2 text-red-600 dark:text-red-500 font-bold tracking-widest mb-4 uppercase text-sm">
+                            <span class="relative flex h-3 w-3">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                            </span>
+                            Live & Upcoming Bidding
+                        </span>
+                        <h2 class="font-heading text-4xl md:text-5xl font-bold text-primary dark:text-white mb-4">Exclusive Specimen Auctions</h2>
+                        <p class="text-gray-600 dark:text-gray-400">Join our curated online bidding events to acquire world-class geological rarities.</p>
+                    </div>
+                    <a href="auctions.html" class="hidden md:inline-flex items-center font-bold text-primary dark:text-secondary hover:underline group">
+                        View All Auctions <i data-lucide="arrow-right" class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Auction Item -->
+                    <div class="group flex flex-col sm:flex-row card-bg rounded-sm border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal">
+                        <div class="w-full sm:w-2/5 relative h-64 sm:h-auto overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <img src="assets/images/hero-mineral.png" alt="Meteorite slice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-sm">Lot #402</div>
+                        </div>
+                        <div class="w-full sm:w-3/5 p-6 md:p-8 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-heading text-2xl font-bold mb-2 dark:text-white">Seymchan Pallasite Meteorite</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">A stunning etched slice showing magnificent olivine crystals suspended in extraterrestrial iron-nickel matrix.</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end mb-4 pb-4 border-b border-gray-100 dark:border-gray-800">
+                                    <div>
+                                        <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Current Bid</p>
+                                        <p class="font-bold text-2xl text-primary dark:text-white">$8,500</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Ends In</p>
+                                        <p class="font-mono font-bold text-red-600 dark:text-red-400">02:14:45</p>
+                                    </div>
+                                </div>
+                                <button class="w-full py-3 bg-black dark:bg-white text-white dark:text-black font-bold rounded-sm hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors">Place Bid</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Auction Item -->
+                    <div class="group flex flex-col sm:flex-row card-bg rounded-sm border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal" style="transition-delay: 150ms;">
+                        <div class="w-full sm:w-2/5 relative h-64 sm:h-auto overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <img src="assets/images/fossil_ammonite_1778608643447.png" alt="T-Rex Tooth" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-sm">Lot #403</div>
+                        </div>
+                        <div class="w-full sm:w-3/5 p-6 md:p-8 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-heading text-2xl font-bold mb-2 dark:text-white">T-Rex Maxillary Tooth</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Hell Creek Formation, Montana. Pristine serrations and deep rich coloration with no restoration.</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end mb-4 pb-4 border-b border-gray-100 dark:border-gray-800">
+                                    <div>
+                                        <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Current Bid</p>
+                                        <p class="font-bold text-2xl text-primary dark:text-white">$12,000</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Ends In</p>
+                                        <p class="font-mono font-bold text-red-600 dark:text-red-400">04:30:10</p>
+                                    </div>
+                                </div>
+                                <button class="w-full py-3 bg-black dark:bg-white text-white dark:text-black font-bold rounded-sm hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors">Place Bid</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="py-20 relative overflow-hidden bg-primary">
+            <div class="absolute inset-0 bg-[url('assets/images/museum-hall.png')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+            <div class="container mx-auto px-4 lg:px-8 relative z-10 text-center reveal">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Build Your Legacy Collection</h2>
+                <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">Whether you are a seasoned connoisseur or beginning your journey into natural history, our experts are here to guide your acquisitions.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-secondary text-dark-bg hover:bg-secondary-light transition-colors rounded-sm font-bold text-lg">Contact an Expert</a>
+                    <a href="signup.html" class="w-full sm:w-auto px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-primary transition-colors rounded-sm font-bold text-lg">Join Collector's Club</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0A0A] text-white pt-20 pb-10 border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <i data-lucide="gem" class="w-8 h-8 text-secondary"></i>
+                        <span class="font-heading text-2xl font-bold tracking-wider text-white">ANCIENT EARTH</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        The world's premier dealer of museum-grade fossils, rare minerals, and geological artifacts. Certified authenticity, uncompromising quality.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-dark-bg transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-dark-bg transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-dark-bg transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Collections</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="collections.html" class="hover:text-secondary transition-colors">Dinosaur Fossils</a></li>
+                        <li><a href="collections.html" class="hover:text-secondary transition-colors">Marine Specimens</a></li>
+                        <li><a href="minerals.html" class="hover:text-secondary transition-colors">Rare Gemstones</a></li>
+                        <li><a href="minerals.html" class="hover:text-secondary transition-colors">Meteorites</a></li>
+                        <li><a href="authenticity.html" class="hover:text-secondary transition-colors">Display Stands</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Information</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">Our Story</a></li>
+                        <li><a href="authenticity.html" class="hover:text-secondary transition-colors">Authenticity Guarantee</a></li>
+                        <li><a href="auctions.html" class="hover:text-secondary transition-colors">How to Bid</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary transition-colors">Excavation Journal</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe to receive early access to new acquisitions and auction catalogs.</p>
+                    <form class="flex flex-col gap-3">
+                        <input type="email" placeholder="Email Address" class="bg-gray-900 border border-gray-800 text-white px-4 py-3 rounded-sm focus:outline-none focus:border-secondary transition-colors">
+                        <button type="submit" class="bg-secondary text-dark-bg font-bold py-3 rounded-sm hover:bg-secondary-light transition-colors">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+                <p>&copy; 2026 Ancient Earth Geological Specimens. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+

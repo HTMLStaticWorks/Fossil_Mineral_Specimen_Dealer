@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Base Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+}
+
+p, span, a, div {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #5B4636;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4A24C;
+}
+
+/* Museum Gallery Zoom Interaction */
+.gallery-zoom {
+  overflow: hidden;
+}
+.gallery-zoom img {
+  transition: transform 0.7s ease;
+}
+.gallery-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Premium Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Overlay */
+.hero-overlay {
+  background: linear-gradient(to right, rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.3));
+}
+
+/* Dark Mode Specific Overrides */
+.dark body {
+  background-color: #111111;
+  color: #E0E0E0;
+}
+.dark .card-bg {
+  background-color: #1A1A1A;
+  border-color: #333;
+}
+.dark .text-body {
+  color: #A0A0A0;
+}
+
+/* Light Mode Specific Overrides */
+.light body {
+  background-color: #F9F8F6;
+  color: #2C2C2C;
+}
+.light .card-bg {
+  background-color: #FFFFFF;
+  border-color: #E5E5E5;
+}
+.light .text-body {
+  color: #555555;
+}
+
+/* Text Gradient */
+.text-gradient-gold {
+  background: linear-gradient(90deg, #D4A24C, #E6BC73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* RTL Support */
+[dir="rtl"] .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+[dir="rtl"] .mr-4 {
+  margin-right: 0;
+  margin-left: 1rem;
+}
