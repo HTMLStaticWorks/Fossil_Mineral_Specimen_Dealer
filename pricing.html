@@ -88,9 +88,9 @@
         <!-- 2. Pricing Cards -->
         <section class="py-20 bg-[#151515] reveal">
             <div class="container mx-auto px-4 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     <!-- Standard -->
-                    <div class="bg-[#1A1A1A] border border-gray-800 rounded-sm p-8 flex flex-col hover:border-gray-600 transition-colors">
+                    <div class="bg-[#1A1A1A] border border-gray-800 rounded-sm p-8 flex flex-col hover:border-gray-600 transition-colors h-full">
                         <h3 class="font-heading text-2xl font-bold text-white mb-2">Associate</h3>
                         <p class="text-gray-400 mb-6">For the budding enthusiast.</p>
                         <p class="text-4xl font-bold text-white mb-8">$500 <span class="text-sm text-gray-500 font-normal">/ year</span></p>
@@ -98,12 +98,12 @@
                             <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Digital catalogs</li>
                             <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Public auction bidding</li>
                         </ul>
-                        <button class="w-full py-3 border border-secondary text-secondary font-bold rounded-sm hover:bg-secondary hover:text-dark-bg transition-colors">Join Now</button>
+                        <button class="w-full py-3 border border-secondary text-secondary font-bold rounded-sm hover:bg-secondary hover:text-dark-bg transition-colors mt-auto">Join Now</button>
                     </div>
 
                     <!-- Premium -->
-                    <div class="bg-[#1A1A1A] border-2 border-secondary rounded-sm p-8 flex flex-col relative shadow-[0_0_30px_rgba(212,162,76,0.15)] transform md:-translate-y-4">
-                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary text-dark-bg px-4 py-1 font-bold text-sm uppercase tracking-wider rounded-sm">Curator's Choice</div>
+                    <div class="bg-[#1A1A1A] border-2 border-secondary rounded-sm p-8 flex flex-col relative shadow-[0_0_30px_rgba(212,162,76,0.15)] transform lg:-translate-y-4 h-full">
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary text-dark-bg px-4 py-1 font-bold text-sm uppercase tracking-wider rounded-sm z-10">Curator's Choice</div>
                         <h3 class="font-heading text-2xl font-bold text-white mb-2">Fellow</h3>
                         <p class="text-gray-400 mb-6">For the serious private collector.</p>
                         <p class="text-4xl font-bold text-white mb-8">$2,500 <span class="text-sm text-gray-500 font-normal">/ year</span></p>
@@ -112,20 +112,22 @@
                             <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> 5% reduction in premiums</li>
                             <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Early access</li>
                         </ul>
-                        <button class="w-full py-3 bg-secondary text-dark-bg font-bold rounded-sm hover:bg-white transition-colors">Join Now</button>
+                        <button class="w-full py-3 bg-secondary text-dark-bg font-bold rounded-sm hover:bg-white transition-colors mt-auto">Join Now</button>
                     </div>
 
                     <!-- Elite -->
-                    <div class="bg-[#1A1A1A] border border-gray-800 rounded-sm p-8 flex flex-col hover:border-gray-600 transition-colors">
-                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Patron</h3>
-                        <p class="text-gray-400 mb-6">For institutions and elite buyers.</p>
-                        <p class="text-4xl font-bold text-white mb-8">$10,000 <span class="text-sm text-gray-500 font-normal">/ year</span></p>
-                        <ul class="space-y-4 mb-8 flex-grow">
-                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Dedicated agent</li>
-                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Zero auction premiums</li>
-                            <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Sourcing requests</li>
-                        </ul>
-                        <button class="w-full py-3 border border-secondary text-secondary font-bold rounded-sm hover:bg-secondary hover:text-dark-bg transition-colors">Join Now</button>
+                    <div class="md:col-span-2 lg:col-span-1">
+                        <div class="bg-[#1A1A1A] border border-gray-800 rounded-sm p-8 flex flex-col hover:border-gray-600 transition-colors h-full md:max-w-[calc(50%-1rem)] lg:max-w-none md:mx-auto">
+                            <h3 class="font-heading text-2xl font-bold text-white mb-2">Patron</h3>
+                            <p class="text-gray-400 mb-6">For institutions and elite buyers.</p>
+                            <p class="text-4xl font-bold text-white mb-8">$10,000 <span class="text-sm text-gray-500 font-normal">/ year</span></p>
+                            <ul class="space-y-4 mb-8 flex-grow">
+                                <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Dedicated agent</li>
+                                <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Zero auction premiums</li>
+                                <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check" class="text-secondary w-5 h-5"></i> Sourcing requests</li>
+                            </ul>
+                            <button class="w-full py-3 border border-secondary text-secondary font-bold rounded-sm hover:bg-secondary hover:text-dark-bg transition-colors mt-auto">Join Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
