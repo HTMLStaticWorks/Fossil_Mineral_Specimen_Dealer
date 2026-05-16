@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancient Earth | Sign Up</title>
+    <title>Ancient Earth | Sign In</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -74,8 +74,8 @@
                     <button class="rtl-toggle font-heading font-bold">EN/AR</button>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-2">
-                    <a href="login.html" class="text-center py-3 border border-primary dark:border-secondary text-primary dark:text-secondary rounded-sm font-semibold">Login</a>
-                    <a href="signup.html" class="text-center py-3 bg-primary text-white dark:bg-secondary dark:text-dark-bg rounded-sm font-semibold">Sign Up</a>
+                    <a href="login.html" class="text-center py-3 bg-primary text-white dark:bg-secondary dark:text-dark-bg rounded-sm font-semibold">Login</a>
+                    <a href="signup.html" class="text-center py-3 border border-primary dark:border-secondary text-primary dark:text-secondary rounded-sm font-semibold">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -89,53 +89,51 @@
                 <img src="assets/images/museum-hall.png" class="w-full h-full object-cover grayscale">
             </div>
             <div class="relative z-10 max-w-md reveal">
-                <i data-lucide="crown" class="w-12 h-12 text-secondary mb-6"></i>
-                <h2 class="font-heading text-4xl font-bold text-white mb-6">Enter The Collector's Vault</h2>
-                <p class="text-gray-400 mb-8">Registration is required to view unreserved pricing, participate in live geological auctions, and receive private sourcing catalogs.</p>
-                <ul class="space-y-4">
-                    <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check-circle-2" class="text-secondary w-5 h-5"></i> Access to bidding rooms</li>
-                    <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check-circle-2" class="text-secondary w-5 h-5"></i> View high-res X-ray reports</li>
-                    <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check-circle-2" class="text-secondary w-5 h-5"></i> Direct curator communication</li>
-                </ul>
+                <i data-lucide="lock" class="w-12 h-12 text-secondary mb-6"></i>
+                <h2 class="font-heading text-4xl font-bold text-white mb-6">Welcome Back, Collector</h2>
+                <p class="text-gray-400 mb-8">Sign in to your private vault to manage your acquisitions, view upcoming private auctions, and track your active bids.</p>
+                <div class="p-6 bg-[#1A1A1A] border border-gray-800 rounded-sm">
+                    <p class="text-secondary font-bold mb-2">Security Notice:</p>
+                    <p class="text-xs text-gray-500">Your session is protected by end-to-end encryption. For your safety, always ensure you are on the secure ancientearth.com domain.</p>
+                </div>
             </div>
         </section>
 
         <!-- 2. Form Side -->
         <section class="lg:w-1/2 flex items-center justify-center p-8 relative pt-32 lg:pt-8 reveal">
             <div class="w-full max-w-md">
-                <h2 class="font-heading text-3xl font-bold dark:text-white mb-2">Create Account</h2>
-                <p class="text-gray-500 dark:text-gray-400 text-sm mb-8">Enter your details to begin the verification process.</p>
+                <h2 class="font-heading text-3xl font-bold dark:text-white mb-2">Collector Sign In</h2>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-8">Securely access your museum-grade portfolio.</p>
 
                 <form class="space-y-5">
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1">Full Name</label>
-                        <input type="text" class="w-full bg-white dark:bg-[#1A1A1A] border border-gray-300 dark:border-gray-800 text-gray-900 dark:text-white px-4 py-3 rounded-sm focus:outline-none focus:border-secondary transition-colors">
-                    </div>
                     <div>
                         <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1">Email Address</label>
                         <input type="email" class="w-full bg-white dark:bg-[#1A1A1A] border border-gray-300 dark:border-gray-800 text-gray-900 dark:text-white px-4 py-3 rounded-sm focus:outline-none focus:border-secondary transition-colors">
                     </div>
                     <div>
-                        <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1">Password</label>
+                        <div class="flex justify-between items-center mb-1">
+                            <label class="block text-sm font-bold text-gray-700 dark:text-gray-300">Password</label>
+                            <a href="#" class="text-xs text-secondary hover:underline">Forgot Password?</a>
+                        </div>
                         <input type="password" class="w-full bg-white dark:bg-[#1A1A1A] border border-gray-300 dark:border-gray-800 text-gray-900 dark:text-white px-4 py-3 rounded-sm focus:outline-none focus:border-secondary transition-colors">
                     </div>
-                    <!-- 3. Extra Consent -->
-                    <div class="flex items-start gap-3 mt-4">
-                        <input type="checkbox" class="mt-1 accent-secondary">
-                        <p class="text-xs text-gray-500">I agree to the Terms of Service and acknowledge that bidding requires identity verification.</p>
+                    
+                    <div class="flex items-center gap-2 mt-4">
+                        <input type="checkbox" id="remember" class="accent-secondary">
+                        <label for="remember" class="text-sm text-gray-500">Stay signed in for 30 days</label>
                     </div>
 
-                    <button type="submit" class="w-full bg-secondary text-dark-bg font-bold py-3 rounded-sm hover:bg-white transition-colors mt-6">Register</button>
+                    <button type="submit" class="w-full bg-secondary text-dark-bg font-bold py-3 rounded-sm hover:bg-white transition-colors mt-6">Secure Sign In</button>
                 </form>
                 
                 <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-8">
-                    Already verified? <a href="login.html" class="text-primary dark:text-secondary hover:underline font-bold">Sign In</a>
+                    New to Ancient Earth? <a href="signup.html" class="text-primary dark:text-secondary hover:underline font-bold">Register as Collector</a>
                 </p>
             </div>
         </section>
     </main>
 
     <script>lucide.createIcons();</script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
-

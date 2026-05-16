@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ancient Earth | Fossil & Mineral Specimen Dealer</title>
     <meta name="description" content="Discover museum-grade fossil collections, rare mineral showcases, and authenticity-certified geological artifacts.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,9 +26,9 @@
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
-                <a href="index.html" class="flex items-center gap-2 group whitespace-nowrap">
-                    <i data-lucide="gem" class="w-8 h-8 text-primary dark:text-secondary group-hover:rotate-12 transition-transform"></i>
-                    <span class="font-heading text-2xl font-bold tracking-wider text-primary dark:text-white">ANCIENT EARTH</span>
+                <a href="index.html" class="flex items-center gap-2 group min-w-0 flex-shrink-0">
+                    <i data-lucide="gem" class="w-7 h-7 md:w-8 md:h-8 text-primary dark:text-secondary group-hover:rotate-12 transition-transform"></i>
+                    <span class="font-heading text-xl md:text-2xl font-bold tracking-wider text-primary dark:text-white truncate">ANCIENT EARTH</span>
                 </a>
 
                 <!-- Desktop Menu -->
@@ -52,6 +53,7 @@
                     <button class="rtl-toggle p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-heading font-bold" aria-label="Toggle RTL">
                         EN/AR
                     </button>
+                    <a href="login.html" class="text-primary dark:text-white font-semibold hover:text-secondary transition-colors px-4">Login</a>
                     <a href="signup.html" class="px-5 py-2.5 bg-primary text-white hover:bg-primary-light dark:bg-secondary dark:text-dark-bg dark:hover:bg-secondary-light rounded-sm font-semibold transition-colors flex items-center gap-2 whitespace-nowrap">
                         <span>Sign Up</span>
                     </a>
@@ -67,7 +69,7 @@
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-[#1A1A1A] border-t border-gray-200 dark:border-gray-800 absolute w-full left-0 shadow-xl">
             <div class="flex flex-col py-4 px-6 gap-4">
-                <a href="index.html" class="text-primary dark:text-secondary font-medium">Home</a>
+                <a href="index.html" class="text-primary dark:text-secondary font-bold border-l-4 border-primary dark:border-secondary pl-4 -ml-6 bg-gray-50 dark:bg-white/5 py-2">Home</a>
                 <a href="home2.html" class="hover:text-primary dark:hover:text-secondary">Home 2</a>
                 <a href="about.html" class="hover:text-primary dark:hover:text-secondary">About</a>
                 <a href="services.html" class="hover:text-primary dark:hover:text-secondary">Services</a>
@@ -82,7 +84,10 @@
                     </button>
                     <button class="rtl-toggle font-heading font-bold">EN/AR</button>
                 </div>
-                <a href="signup.html" class="mt-2 text-center py-3 bg-primary text-white dark:bg-secondary dark:text-dark-bg rounded-sm font-semibold">Sign Up</a>
+                <div class="grid grid-cols-2 gap-4 mt-2">
+                    <a href="login.html" class="text-center py-3 border border-primary dark:border-secondary text-primary dark:text-secondary rounded-sm font-semibold">Login</a>
+                    <a href="signup.html" class="text-center py-3 bg-primary text-white dark:bg-secondary dark:text-dark-bg rounded-sm font-semibold">Sign Up</a>
+                </div>
             </div>
         </div>
     </header>
@@ -98,19 +103,19 @@
             
             <div class="container mx-auto px-4 lg:px-8 relative z-10 flex flex-col items-center text-center mt-16">
                 <div class="reveal">
-                    <span class="inline-block py-1 px-3 border border-secondary text-secondary font-heading tracking-widest text-sm mb-6 uppercase">Museum-Grade Collection</span>
-                    <h1 class="font-heading text-5xl md:text-7xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto">
+                    <span class="inline-block py-1 px-3 border border-secondary text-secondary font-heading tracking-widest text-xs md:text-sm mb-6 uppercase">Museum-Grade Collection</span>
+                    <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto">
                         Own a Piece of <span class="text-gradient-gold">Earth's Ancient History</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                    <p class="text-base md:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
                         Curated geological specimens for elite collectors. Discover rare dinosaur fossils, glowing mineral crystals, and authenticity-certified artifacts spanning millions of years.
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <a href="collections.html" class="w-full sm:w-64 px-8 py-4 bg-secondary text-dark-bg hover:bg-secondary-light transition-colors rounded-sm font-semibold text-lg flex items-center justify-center gap-2 group">
+                        <a href="collections.html" class="w-full sm:w-72 px-8 py-4 bg-secondary text-dark-bg hover:bg-secondary-light transition-colors rounded-sm font-semibold text-lg flex items-center justify-center gap-2 group">
                             <span>Explore Collections</span>
                             <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                         </a>
-                        <a href="auctions.html" class="w-full sm:w-64 px-8 py-4 border border-white/30 text-white hover:bg-white/10 transition-colors rounded-sm font-semibold text-lg backdrop-blur-sm flex items-center justify-center gap-2">
+                        <a href="auctions.html" class="w-full sm:w-72 px-8 py-4 border border-white/30 text-white hover:bg-white/10 transition-colors rounded-sm font-semibold text-lg backdrop-blur-sm flex items-center justify-center gap-2">
                             <i data-lucide="gavel" class="w-5 h-5"></i>
                             <span>Join Live Auction</span>
                         </a>
@@ -233,7 +238,7 @@
                         </div>
                         
                         <!-- Floating Accent Card -->
-                        <div class="absolute top-2 right-2 md:-bottom-10 md:-right-10 md:top-auto md:left-auto bg-white dark:bg-[#1A1A1A] p-4 md:p-6 rounded-sm shadow-xl border border-gray-100 dark:border-gray-800 animate-float z-20">
+                        <div class="absolute top-4 right-4 md:bottom-6 md:right-6 lg:-bottom-10 lg:-right-10 md:top-auto bg-white dark:bg-[#1A1A1A] p-4 md:p-6 rounded-sm shadow-xl border border-gray-100 dark:border-gray-800 animate-float z-20 whitespace-nowrap">
                             <div class="flex items-center gap-3 md:gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-secondary/20 flex items-center justify-center">
                                     <i data-lucide="microscope" class="w-5 h-5 md:w-6 md:h-6 text-primary dark:text-secondary"></i>
@@ -377,7 +382,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Testimonial 1 -->
-                    <div class="card-bg p-8 rounded-sm border border-gray-200 dark:border-gray-800 shadow-sm reveal" style="transition-delay: 0ms;">
+                    <div class="card-bg p-8 rounded-sm border border-gray-200 dark:border-gray-800 shadow-sm reveal flex flex-col h-full" style="transition-delay: 0ms;">
                         <div class="flex gap-1 text-secondary mb-6">
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -388,7 +393,7 @@
                         <p class="text-gray-700 dark:text-gray-300 italic mb-8 leading-relaxed">
                             "The authenticity documentation provided with my T-Rex tooth was beyond reproach. A true cornerstone for my private collection."
                         </p>
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-4 mt-auto">
                             <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">JD</div>
                             <div>
                                 <p class="font-bold dark:text-white">James Dupont</p>
@@ -398,7 +403,7 @@
                     </div>
 
                     <!-- Testimonial 2 -->
-                    <div class="card-bg p-8 rounded-sm border border-gray-200 dark:border-gray-800 shadow-sm reveal" style="transition-delay: 100ms;">
+                    <div class="card-bg p-8 rounded-sm border border-gray-200 dark:border-gray-800 shadow-sm reveal flex flex-col h-full" style="transition-delay: 100ms;">
                         <div class="flex gap-1 text-secondary mb-6">
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -409,7 +414,7 @@
                         <p class="text-gray-700 dark:text-gray-300 italic mb-8 leading-relaxed">
                             "Their mineral specimens are consistently museum-grade. The Elbaite Tourmaline I acquired is the highlight of our geological wing."
                         </p>
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-4 mt-auto">
                             <div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold">AM</div>
                             <div>
                                 <p class="font-bold dark:text-white">Dr. Aris Miller</p>
@@ -419,7 +424,7 @@
                     </div>
 
                     <!-- Testimonial 3 -->
-                    <div class="card-bg p-8 rounded-sm border border-gray-200 dark:border-gray-800 shadow-sm reveal" style="transition-delay: 200ms;">
+                    <div class="card-bg p-8 rounded-sm border border-gray-200 dark:border-gray-800 shadow-sm reveal flex flex-col h-full" style="transition-delay: 200ms;">
                         <div class="flex gap-1 text-secondary mb-6">
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -430,7 +435,7 @@
                         <p class="text-gray-700 dark:text-gray-300 italic mb-8 leading-relaxed">
                             "Transparent bidding, impeccable shipping, and world-class artifacts. Ancient Earth is the only dealer I trust for rare fossils."
                         </p>
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-4 mt-auto">
                             <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">SL</div>
                             <div>
                                 <p class="font-bold dark:text-white">Sophia Laurent</p>
@@ -450,8 +455,8 @@
                 <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6">Build Your Legacy Collection</h2>
                 <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">Whether you are a seasoned connoisseur or beginning your journey into natural history, our experts are here to guide your acquisitions.</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="contact.html" class="w-full sm:w-64 px-8 py-4 bg-secondary text-dark-bg hover:bg-secondary-light transition-colors rounded-sm font-bold text-lg text-center">Contact an Expert</a>
-                    <a href="signup.html" class="w-full sm:w-64 px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-primary transition-colors rounded-sm font-bold text-lg text-center">Join Collector's Club</a>
+                    <a href="contact.html" class="w-full sm:w-72 px-8 py-4 bg-secondary text-dark-bg hover:bg-secondary-light transition-colors rounded-sm font-bold text-lg text-center">Contact an Expert</a>
+                    <a href="signup.html" class="w-full sm:w-72 px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-primary transition-colors rounded-sm font-bold text-lg text-center">Join Collector's Club</a>
                 </div>
             </div>
         </section>
@@ -463,7 +468,7 @@
         <div class="container mx-auto px-4 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
-                <div class="col-span-1 lg:col-span-1">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
                     <a href="index.html" class="flex items-center gap-2 mb-6">
                         <i data-lucide="gem" class="w-8 h-8 text-secondary"></i>
                         <span class="font-heading text-2xl font-bold tracking-wider text-white">ANCIENT EARTH</span>
@@ -485,7 +490,7 @@
                 </div>
 
                 <!-- Links -->
-                <div>
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
                     <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Collections</h4>
                     <ul class="space-y-3 text-gray-400">
                         <li><a href="collections.html" class="hover:text-secondary transition-colors">Dinosaur Fossils</a></li>
@@ -496,22 +501,30 @@
                     </ul>
                 </div>
 
-                <div>
-                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Information</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li><a href="about.html" class="hover:text-secondary transition-colors">Our Story</a></li>
-                        <li><a href="authenticity.html" class="hover:text-secondary transition-colors">Authenticity Guarantee</a></li>
-                        <li><a href="auctions.html" class="hover:text-secondary transition-colors">How to Bid</a></li>
-                        <li><a href="blog.html" class="hover:text-secondary transition-colors">Excavation Journal</a></li>
-                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact Us</a></li>
+                <!-- Contact -->
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Contact</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-secondary shrink-0 mt-1"></i>
+                            <span>14 Geological Way, Mayfair<br>London, UK W1J 7BQ</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-secondary shrink-0"></i>
+                            <a href="mailto:curators@ancientearth.com" class="hover:text-secondary transition-colors">curators@ancientearth.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-secondary shrink-0"></i>
+                            <span>+44 20 7946 0123</span>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Newsletter -->
-                <div>
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
                     <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider">Newsletter</h4>
                     <p class="text-gray-400 text-sm mb-4">Subscribe to receive early access to new acquisitions and auction catalogs.</p>
-                    <form class="flex flex-col gap-3">
+                    <form class="flex flex-col gap-3 w-full">
                         <input type="email" placeholder="Email Address" class="bg-gray-900 border border-gray-800 text-white px-4 py-3 rounded-sm focus:outline-none focus:border-secondary transition-colors">
                         <button type="submit" class="bg-secondary text-dark-bg font-bold py-3 rounded-sm hover:bg-secondary-light transition-colors">Subscribe</button>
                     </form>
