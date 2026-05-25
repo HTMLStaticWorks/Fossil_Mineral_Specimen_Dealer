@@ -66,4 +66,73 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Password Toggle
+    const togglePasswordBtn = document.getElementById('toggle-password');
+    const passwordInput = document.getElementById('password-input');
+    if (togglePasswordBtn && passwordInput) {
+        togglePasswordBtn.addEventListener('click', () => {
+            const isPassword = passwordInput.getAttribute('type') === 'password';
+            passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+            
+            const eyeIcon = document.getElementById('eye-icon');
+            const eyeOffIcon = document.getElementById('eye-off-icon');
+            if (eyeIcon && eyeOffIcon) {
+                if (isPassword) {
+                    eyeIcon.classList.add('hidden');
+                    eyeIcon.classList.remove('block');
+                    eyeOffIcon.classList.add('block');
+                    eyeOffIcon.classList.remove('hidden');
+                } else {
+                    eyeIcon.classList.add('block');
+                    eyeIcon.classList.remove('hidden');
+                    eyeOffIcon.classList.add('hidden');
+                    eyeOffIcon.classList.remove('block');
+                }
+            }
+        });
+    }
+
+    // FAQ Accordion
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const item = toggle.closest('.faq-item');
+            const content = item.querySelector('.faq-content');
+            const icon = toggle.querySelector('.faq-icon');
+            const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    const otherToggle = otherItem.querySelector('.faq-toggle');
+                    const otherContent = otherItem.querySelector('.faq-content');
+                    const otherIcon = otherItem.querySelector('.faq-icon');
+                    
+                    if (otherToggle && otherContent) {
+                        otherToggle.setAttribute('aria-expanded', 'false');
+                        otherContent.style.maxHeight = null;
+                        if (otherIcon) {
+                            otherIcon.classList.remove('rotate-180');
+                        }
+                    }
+                }
+            });
+
+            // Toggle current item
+            if (isOpen) {
+                toggle.setAttribute('aria-expanded', 'false');
+                content.style.maxHeight = null;
+                if (icon) {
+                    icon.classList.remove('rotate-180');
+                }
+            } else {
+                toggle.setAttribute('aria-expanded', 'true');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                if (icon) {
+                    icon.classList.add('rotate-180');
+                }
+            }
+        });
+    });
 });
